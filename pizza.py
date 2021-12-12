@@ -88,17 +88,17 @@ def log(example: str) -> Callable:
 
 
 @log('🥧 name in {} s!')
-def bake(pizza):
+def bake(pizza: Pizza):
     """Готовит пиццу"""
 
 
 @log('🛵 name in {} s!')
-def delivery(pizza):
+def delivery(pizza: Pizza):
     """Доставляет пиццу"""
 
 
 @log('🏠 name in {} s!')
-def pickup(pizza):
+def pickup(pizza: Pizza):
     """Доставляет пиццу"""
 
 
