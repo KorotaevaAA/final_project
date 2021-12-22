@@ -5,7 +5,6 @@ from typing import Callable
 class Pizza:
     def __init__(self, name: str, size: str):
         if name not in ['Margherita', 'Pepperoni', 'Hawaiian']:
-            print(name)
             raise ValueError('Not have this pizza in menu')
         if size not in ['L', 'XL']:
             raise ValueError('Possible sizes: L, XL')
